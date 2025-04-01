@@ -49,7 +49,7 @@ figure;
 axis([-1 1 -1 1 0 2]); % Adjust axis limits as per your robot's workspace
 grid on;
 hold on;
-view(0,0);
+view(-37.5, 30);
 % Display the initial configuration
 show(robot, q(:,1)', 'PreservePlot', false);
 title('Robot Trajectory Animation');
@@ -90,7 +90,7 @@ hold on;
 title('Robot Returning to Home Configuration');
 
 % Set the desired view perspective (e.g., front view)
-view(0, 0);
+view(-37.5, 30);
 
 % Display the initial configuration at the start of the return trajectory
 show(robot, qReturn(:,1)', 'PreservePlot', false);
