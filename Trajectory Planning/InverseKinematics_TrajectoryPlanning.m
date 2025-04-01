@@ -20,15 +20,6 @@ initialGuess = homeConfiguration(robot);
 [configSolution, solutionInfo] = gik(initialGuess, constraint1, constraint2)
 configSolution
 
-%joint_values = homeConfig.JointPosition;
-% Define waypoints for each joint
-%waypoints = [homeConfig(1).JointPosition, configSolution(1);
-%             homeConfig(2).JointPosition, configSolution(2);
- %            homeConfig(3).JointPosition, configSolution(3);
-  %           homeConfig(4).JointPosition, configSolution(4);
-   %          homeConfig(5).JointPosition, configSolution(5);
-    %         homeConfig(6).JointPosition, configSolution(6)];
-
 % Get joint values from home configuration 
 % Extract joint positions from configurations
 % First determine how many joints your robot has
